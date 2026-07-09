@@ -1,0 +1,111 @@
+---
+title: "Troubleshoot Common Trxphy Issues"
+sidebarTitle: "Troubleshooting"
+description: "Fix common Trxphy problems including login failures, integration errors, missing notifications, and billing issues step by step."
+---
+
+Most issues with Trxphy can be resolved quickly with a few targeted steps. This guide walks you through the most common problems users encounter — from login and integration hiccups to notification gaps and billing questions — so you can get back on track without waiting for support.
+
+## Login and Access Issues
+
+### Forgot Your Password
+
+If you can't remember your password, resetting it takes less than a minute.
+
+<Steps>
+  <Step title="Go to the login page">
+    Navigate to the Trxphy login page and click **Forgot password?** below the sign-in form.
+  </Step>
+  <Step title="Enter your email address">
+    Type the email address associated with your Trxphy account and click **Send reset link**.
+  </Step>
+  <Step title="Check your inbox">
+    Open your email inbox and look for a message from Trxphy with the subject line "Reset your password." The link is valid for 30 minutes.
+  </Step>
+  <Step title="Reset your password">
+    Click the link in the email, enter a new password, confirm it, and click **Save**. You'll be signed in automatically.
+  </Step>
+</Steps>
+
+### Account Locked
+
+After 5 consecutive failed login attempts, Trxphy temporarily locks your account to protect against unauthorized access. The lock lifts automatically after **15 minutes**. If you don't want to wait, use the **Forgot password?** flow above to reset your credentials and regain access immediately.
+
+### Not Receiving Verification Emails
+
+If you're not receiving account verification or confirmation emails from Trxphy:
+
+- **Check your spam or junk folder** — emails from `noreply@trxphy.com` are occasionally filtered.
+- **Add the sender to your contacts** to prevent future filtering.
+- **Request a new verification email** from the login page by clicking **Resend verification email**.
+- If your email provider uses strict filtering, ask your IT team to allowlist the `trxphy.com` domain.
+
+---
+
+## Integration Issues
+
+### Slack Not Posting Notifications
+
+If your Slack integration is connected but messages aren't appearing in your channel:
+
+- Verify that the Trxphy app has **permission to post** in the selected channel. For private channels, the Trxphy app must be explicitly invited.
+- Check that the correct channel is selected under **Settings → Integrations → Slack**.
+- Disconnect and reconnect the integration: go to **Settings → Integrations**, click **Disconnect** next to Slack, then click **Connect** and follow the authorization steps again.
+- Confirm that your Slack workspace admin hasn't restricted third-party app posting.
+
+### Google Calendar Not Syncing
+
+If your goals and milestones aren't appearing in Google Calendar:
+
+- Go to **Settings → Integrations → Google Calendar** and click **Re-authorize** to refresh your access token, which can expire over time.
+- After re-authorizing, confirm that the correct calendar is selected in the integration settings — Trxphy syncs to a specific calendar, not all calendars in your account.
+- Make sure the milestones you expect to see have due dates set, as only dated items sync to Google Calendar.
+
+---
+
+## Notification Issues
+
+### Not Receiving Email Notifications
+
+If you're not getting Trxphy notification emails:
+
+- **Check your spam folder** for emails from `notifications@trxphy.com`.
+- Confirm your email address is verified by visiting [Settings → Profile](/settings/profile).
+- Review your notification preferences — some notification types may be turned off. See the [Notifications guide](/guides/notifications) for a full walkthrough of available settings.
+- If you recently changed your email address, verify the new address from the confirmation email that was sent to it.
+
+### Push Notifications Not Showing
+
+If browser push notifications from Trxphy aren't appearing on your device:
+
+- Check that your **browser has permission** to send notifications from Trxphy. In Chrome, go to **Settings → Privacy and security → Site settings → Notifications** and make sure `trxphy.com` is set to **Allow**.
+- In Firefox, check **Preferences → Privacy & Security → Permissions → Notifications**.
+- On macOS, confirm that your browser is allowed to send notifications in **System Settings → Notifications**.
+- If you previously blocked notifications, you'll need to manually re-enable permission — Trxphy cannot prompt you again once permission has been denied.
+
+---
+
+## Billing Issues
+
+### Payment Failed
+
+If a payment attempt fails, your account will remain active briefly while you update your details. To resolve it:
+
+- Go to [Settings → Billing](/settings/billing) and click **Update payment method**.
+- Enter a new valid card or update your existing card's expiry date and CVV.
+- Once updated, click **Retry payment** to immediately retry the failed charge.
+- If the issue persists, contact your bank to confirm the card isn't being blocked for online transactions.
+
+### Charged After Cancellation
+
+If you see a charge after cancelling your subscription, it's most likely a prorated charge or a charge that was already in progress before cancellation was processed. Downgrades and cancellations take effect at the end of the current billing period, so a final charge for the active period is expected. If you believe the charge is an error, please [contact support](/help/contact) with your invoice number so the team can investigate.
+
+---
+
+<Warning>
+  If you've worked through the relevant steps above and your issue remains unresolved, please reach out to the support team **before** taking drastic actions like deleting your account or revoking integrations. Deleting your account is permanent and cannot be undone. The support team can often resolve issues directly without any data loss.
+</Warning>
+
+<Card title="Contact Support" icon="envelope" href="/help/contact">
+  Still stuck? Reach the Trxphy support team by email or chat. View response times and what to include in your request.
+</Card>

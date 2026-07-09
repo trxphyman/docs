@@ -1,0 +1,90 @@
+---
+title: "Connect Trxphy to Your Favorite Tools"
+sidebarTitle: "Integrations"
+description: "Integrate Trxphy with Slack, Google Calendar, and Zapier to automate reminders, sync events, and connect your workflow."
+---
+
+Trxphy works best when it lives inside the tools you already use every day. By connecting Trxphy to Slack, Google Calendar, or Zapier, you can receive progress reminders where you already communicate, keep your calendar in sync with milestone deadlines, and build automated workflows without writing a single line of code.
+
+## Available integrations
+
+Trxphy currently supports three first-class integrations. Each one is designed to reduce the friction of staying on top of your goals.
+
+<CardGroup cols={3}>
+  <Card title="Slack" icon="slack">
+    Receive goal notifications and check-in reminders directly in any Slack channel or DM.
+  </Card>
+  <Card title="Google Calendar" icon="calendar">
+    Sync milestone due dates to your Google Calendar so deadlines appear alongside your other commitments.
+  </Card>
+  <Card title="Zapier" icon="bolt">
+    Connect Trxphy to thousands of apps using Zapier triggers and actions — no code required.
+  </Card>
+</CardGroup>
+
+## Slack integration
+
+Connecting Slack lets Trxphy post goal updates, milestone alerts, and check-in reminders to a channel of your choice.
+
+<Steps>
+  <Step title="Open Integrations settings">
+    Navigate to **Settings → Integrations** in the left sidebar.
+  </Step>
+  <Step title="Connect Slack">
+    Find the **Slack** card and click **Connect**. You'll be redirected to Slack's OAuth authorization page.
+  </Step>
+  <Step title="Authorize Trxphy in your Slack workspace">
+    Select the Slack workspace you want to connect, review the requested permissions, and click **Allow**. Slack redirects you back to Trxphy once authorization is complete.
+  </Step>
+  <Step title="Choose a default notification channel">
+    In the Slack configuration panel, open the **Default channel** dropdown and select the channel where Trxphy should post notifications. You can override this per goal from each goal's settings.
+  </Step>
+  <Step title="Save your settings">
+    Click **Save** to activate the integration. Trxphy will send a confirmation message to your selected channel to confirm the connection is working.
+  </Step>
+</Steps>
+
+## Google Calendar integration
+
+Syncing Google Calendar adds your milestone due dates as calendar events, giving you a unified view of deadlines across your work and personal life.
+
+<Steps>
+  <Step title="Open Integrations settings">
+    Navigate to **Settings → Integrations** in the left sidebar.
+  </Step>
+  <Step title="Connect Google Calendar">
+    Find the **Google Calendar** card and click **Connect**. You'll be redirected to Google's OAuth consent screen.
+  </Step>
+  <Step title="Authorize Trxphy">
+    Sign in with the Google account you want to use, review the calendar permissions Trxphy requests, and click **Allow**. Google redirects you back to Trxphy once authorization is complete.
+  </Step>
+  <Step title="Select a calendar">
+    In the Google Calendar configuration panel, choose which calendar Trxphy should add milestone events to. You can use an existing calendar or a dedicated one you've created for Trxphy milestones.
+  </Step>
+  <Step title="Save your settings">
+    Click **Save**. Trxphy immediately syncs all upcoming milestone due dates to your selected calendar. New milestones you create going forward will sync automatically.
+  </Step>
+</Steps>
+
+## Zapier integration
+
+The Zapier integration opens Trxphy up to thousands of other apps. Build "Zaps" that react to events in Trxphy or that trigger actions inside Trxphy from external tools.
+
+To get started, go to [zapier.com](https://zapier.com), create a new Zap, and search for **Trxphy** as your app. Connect your Trxphy account using your API key, which you can find under **Settings → Integrations → Zapier**.
+
+**Available Trxphy triggers** — these fire when something happens in Trxphy:
+
+- **Goal Created** — triggers when a new goal is added to your account
+- **Milestone Completed** — triggers when you mark a milestone as done
+- **Check-in Logged** — triggers every time you save a new check-in
+
+**Available Trxphy actions** — these let other apps write data into Trxphy:
+
+- **Create Goal** — creates a new goal with a title, description, and target date you specify
+- **Log Check-in** — records a check-in with a value and note for an existing goal
+
+Combine triggers and actions across apps to build workflows like posting a Slack message when a milestone is completed, or creating a Trxphy goal whenever a new task appears in your project management tool.
+
+<Note>
+  You can disconnect any integration at any time by navigating to **Settings → Integrations**, clicking the connected integration's card, and selecting **Disconnect**. Disconnecting does not delete your goals or historical data.
+</Note>

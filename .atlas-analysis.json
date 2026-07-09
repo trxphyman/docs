@@ -1,13 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "Trxphy",
+  "projectDescription": "A SaaS platform that helps users manage, track, and grow their goals with a clean, intuitive interface.",
   "theme": "almond",
-  "name": "Trxphy",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -58,20 +56,19 @@
       }
     ]
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Contact",
-        "href": "mailto:support@trxphy.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Get Started",
-      "href": "/quickstart"
-    }
-  },
-  "footer": {
-    "socials": {}
-  }
+  "keyFeatures": [
+    "Intuitive dashboard for tracking progress",
+    "Real-time notifications and updates",
+    "Flexible integrations with third-party tools",
+    "Customizable settings and preferences",
+    "Secure account management with role-based access",
+    "Billing and subscription management"
+  ],
+  "publicApiSurface": [
+    "User account creation and authentication",
+    "Dashboard views and metrics",
+    "Notification preferences",
+    "Integration configuration",
+    "Subscription and billing management"
+  ]
 }
