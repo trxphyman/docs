@@ -1,7 +1,7 @@
 ---
-title: "Trxphy Data Model: Goals, Milestones & More"
+title: "Trxphy Data Model: Goals, Milestones, Check-ins, and Tags"
 sidebarTitle: "Data Model"
-description: "Learn about the Trxphy data model including goals, milestones, check-ins, tags, and how they relate to each other."
+description: "A reference for the Trxphy data model — how goals, milestones, check-ins, and tags are structured and how each object relates to the others."
 ---
 
 Every piece of data in Trxphy has a well-defined shape and a clear relationship to the rest of the system. Understanding the data model helps you design your goals thoughtfully, use the API confidently, and get the most out of filters, analytics, and integrations. The four primary building blocks are goals, milestones, check-ins, and tags.
@@ -30,7 +30,7 @@ A milestone is a time-bound checkpoint that belongs to exactly one goal. Complet
 
 ## Check-ins
 
-A check-in is a time-stamped record of progress against a goal. Think of it as a journal entry for your goal — each one captures exactly where you stood on a specific date, and together they build the historical data that powers your analytics charts.
+A check-in is a timestamped record of progress against a goal. Each one captures exactly where you stood on a specific date, and together they build the historical data that powers your analytics charts.
 
 A check-in carries three fields:
 
@@ -42,7 +42,7 @@ A check-in carries three fields:
 
 Tags are short, freeform labels you attach to goals to make filtering and organization easier. A goal can carry as many tags as you like, and tags are shared across your workspace so your whole team works from the same vocabulary.
 
-Use tags to group goals by theme (`health`, `q3-launch`, `learning`), by owner, by project, or by any other dimension that makes sense for how you work. The dashboard filter bar and the analytics view both let you narrow results to a specific tag or combination of tags in a single click.
+Use tags to group goals by theme (`health`, `q3-launch`, `learning`), by owner, by project, or by any other dimension that fits your workflow. The dashboard filter bar and the analytics view both let you narrow results to a specific tag or combination of tags in a single click.
 
 <Info>
   All goal data — including milestones, check-ins, and tags — is **private by default**. Your data is only visible to other people when you explicitly move a goal into a shared team workspace or grant a teammate direct access. See the [First Steps guide](/guides/first-steps) to learn how to share goals with your team.
